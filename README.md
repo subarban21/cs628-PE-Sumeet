@@ -1,25 +1,10 @@
-# README.md
+# Movie List App
 
-<h1>Input</h1>
-<p>Based on the users input it will vary. The user will input their Name and Contact Information.</p>
-<p>Education, Skills, Work Experience and any Projects they have worked on.</p>
-<p>All the information will be put inside **Resume.js** and you will use **Resume.css** for formatting</p>
+## Input
+This application expects a predefined list of movies, each with a title, genre, and release year. The user provides input by clicking on the dropdown menu to select a genre, and that determines the movies that will be displayed. The input includes clicking on a movie that would then show an alert of the title of the movie.
 
+## Process
+This app, on selection, will filter the movie list according to genre; for example, "All Genres" would show all movies on the list. It just does this filtering and updating of state using a simple conditional check through `useState` with React and handles the click using event handlers that pop an alert showing the title of the movie.
 
-
-
-
-<h1>Process</h1>
-<p>You will need to initialize a new React project using the following command</p>
-<p><code>npx create-react-app client</code></p>
-<p>You will need to import Resume.js and Resume.css into App.js</p>
-
-<p>To start the server you will need to type the following commmand in the terminal</p>
-<code>npm start</code>
-
-
-
-<h1>Output</h1>
-<p>The background color is (#bdfb04)</p>
-<p>Text will be black font</p>
-<p>Each of the categories will be structured and organized.</p>
+## Output
+This filtered list of movies includes the movie title in bold, followed by the genre on the next line, and then the release year. Clicking a movie shows an alert of the title of the selected movie.
