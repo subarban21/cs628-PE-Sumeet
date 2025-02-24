@@ -1,0 +1,38 @@
+.container {
+    background-color: #000000;  /* Dark background */
+    color: white;/* White font */
+    padding: 20px;/* spacing  */
+    border-radius: 10px;/* rounds the corners */
+    text-align: center;/* Centers text inside the div */
+    width: 50%;
+    margin: 50px auto;
+}
+.h1-title {
+    font-size: 36px;
+    font-weight: bold;/* bolding the text */
+    color: #f8f8f8;/* white color */
+
+}
+.top-nav {
+    color: #ffcc33;/* Gold color  */
+    font-weight: bold;
+}
+
+.main-content {
+    background-color: #a4ced3;
+    color: #000000;
+    padding: 20px;/* Adds spacing */
+    border-radius: 8px;/* rounds the corners */
+    text-align: center;/* Centers text */
+    width: 75%; /* 75% width within the main div .container */
+    margin: 20px auto;/* Centers it below the div .container */
+}
+.city-list {
+    font-weight: bold;
+    font-size: 20px;
+    display: block; {/* removes the bullets */}
+    text-align: left; {/* aligns the text to the left*/}
+}
+.sub-title {
+    font-weight: bold; {/* Bold the sub title text*/}
+}
