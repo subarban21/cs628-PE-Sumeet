@@ -1,12 +1,14 @@
-# ToDo List App
+# Recipe Finder App
 
-## Input
-The user launches the site and will be prompted to either add to the list or delete since 3 tasks will already be loaded once the page loads.
-When the user inputs the task they will then click "Add Task" which will add to the bottom of the list. When the user clicks "Delete" the task will be removed from the list
-and not be visible anymore. Each task that gets add will have a "Delete" button next to it and will only remove that task when clicked.
+**Input**
 
-## Process
-The app uses the **useState** hook to maintain the list of tasks dynamically. When a user enters a task and clicks the "Add Task!" button, the application updates the state by appending the new task. If a user clicks the "Delete" button, the task next to the delete button is removed from the state. The tasks are rendered using the **.map()** function, ensuring that the ToDo List App remains updated whenever the state changes.
+The Recipe Finder app lets the user view recipes and also allows for adding new recipes which includes recipe name, ingredients, preparation time, cooking time, description, and an external URL. Once the user submits with the necessarry changes, it will be sent to the backend via a HTTP POST request. The Recipe list also allows for editing recipes that are already in the list and also the ability to delete a recipe with a click of a button. 
 
-## Output
-The tasks are displayed in a structured list format, styled using **todolistCSS.css** which is located in a folder named "components". Each task appears inside a styled container with an associated delete button. When a task is added, it will appears in the list with a "Delete" button next to it, and when the "Deleted" button is clicked, it is removed instantly.
+**Process**
+
+The Recipe Finder app uses a stack approach which involves a backend and frontend. The frontend is built with React which uses a React Router for navigating. The backend uses Node.js and Expres which handles all the API requests. The data is stored in MongoDB Atlas and when the user submits any request, it is handled through the backend which will proccess and handle the interaction with MongoDB database (Create, Retrieve, Update or Delete) and the connection is done through a MongoClient driver.
+The recipe data that exists within the database was all preloaded through a downloaded JSON file that was made avaialble on a github repository. 
+
+**Output**
+
+The Recipe Finder connects to the datbase and displays to the user a list of recipes dynamically. When the user clicks the "Add Recipe" button it will then appear in the list, and when the user clicks on the recipe name the user will be taken to the recipe details page. If the user clicks on the edit button or delete button the changes will be seen immediately on the recipe list page. 
